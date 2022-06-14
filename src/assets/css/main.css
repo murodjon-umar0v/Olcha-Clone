@@ -41,7 +41,7 @@ footer div.cards img {
 
 .carousel,
 .carousel * {
-    background: none !important;
+    background-color: none !important;
 }
 
 .carousel img {
