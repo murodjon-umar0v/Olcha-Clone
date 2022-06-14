@@ -10,6 +10,8 @@
   "dependencies": {
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
+    "bootstrap": "4.6.0",
+    "bootstrap-vue": "2.21.1",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
