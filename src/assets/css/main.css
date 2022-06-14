@@ -26,15 +26,15 @@ footer ul.about {
  flex-wrap: wrap;
 }
 
-footer ul a:hover {
-    color: grey;
+footer a:hover {
+ color: grey;
 }
 
 footer ul.about a:hover {
-    color: crimson
+ color: crimson;
 }
 
 footer div.cards img {
-    width: 100%;
-    height: 20px;
+ width: 100%;
+ height: 20px;
 }
