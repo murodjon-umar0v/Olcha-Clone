@@ -1,12 +1,40 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-    font-family: 'Raleway', sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ transition: all 0.3s ease-in-out;
+ font-family: "Raleway", sans-serif;
 }
 
 footer a {
-    text-decoration: none;
-    color: whitesmoke;
+ text-decoration: none;
+ color: whitesmoke;
+}
+
+footer ul {
+ list-style: none;
+}
+
+footer ul.info li,
+footer ul.about li {
+ width: 50%;
+}
+
+footer ul.info,
+footer ul.about {
+ display: flex !important;
+ flex-wrap: wrap;
+}
+
+footer ul a:hover {
+    color: grey;
+}
+
+footer ul.about a:hover {
+    color: crimson
+}
+
+footer div.cards img {
+    width: 100%;
+    height: 20px;
 }
