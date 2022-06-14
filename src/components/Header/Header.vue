@@ -39,12 +39,17 @@
       </b-row>
     </b-container>
 
-    <span class="boder"></span>
+    <hr>
 
     <b-container>
-      <b-row>
+      <div class="d-flex">
+        <router-link>
+          <img src="../../assets/logo.png" alt="olcha" width="132" height="28">
+        </router-link>
+        <button>Каталог
 
-      </b-row>
+        </button>
+      </div>
     </b-container>
   </div>
 </template>
@@ -104,12 +109,5 @@ background-color: transparent;
 border-radius: 5px;
 color: white;
 font-weight: 500;
-}
-
-.boder{
-  width: 100%;
-  height: 2px;
-background-color: black;
-
 }
 </style>
