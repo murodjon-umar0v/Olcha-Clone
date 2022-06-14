@@ -1,10 +1,22 @@
 <template>
- <div class="row bg-dark w-100 p-5">
-  <div class="col">test</div>
-  <div class="col">test</div>
-  <div class="col">test</div>
-  <div class="col">test</div>
-  <div class="col">test</div>
+ <div class="row text-light px-3 bg-dark">
+  <div class="col-12 col-lg-4 border">
+    <div class="row">
+        <div class="col-6">
+            <img src="@/assets/index.png" />
+            <p>
+                Телефон поддержки: <br> <a href="tel:+998 (71) 202 202 1">+998 (71) 202 202 1</a>
+            </p>
+        </div>
+        <div class="col-6"></div>
+    </div>
+  </div>
+  <div class="col-12 col-lg-4 border">
+    
+  </div>
+  <div class="col-12 col-lg-4 border">
+    
+  </div>
  </div>
 </template>
 
@@ -12,4 +24,7 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+@import url('../assets/css/main.css');
+</style>
