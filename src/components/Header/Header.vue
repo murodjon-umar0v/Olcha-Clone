@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header py-3">
     <b-container>
       <b-row>
         <b-col class="d-flex">
@@ -46,7 +46,7 @@
     <hr />
 
     <b-container>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center ">
         <router-link>
           <img
             src="../../assets/logo.png"
@@ -57,7 +57,8 @@
           />
         </router-link>
         <button
-          class="rounded-pill py-3 px-4 text-white bg-transparent border me-2"
+        @click="openCatalog"
+          class="rounded-pill py-2 px-4 text-white bg-transparent border me-2"
         >
           Каталог
           <svg
@@ -107,11 +108,31 @@
         </ul>
       </div>
     </b-container>
+<Modal
+:category="category"
+@openCatalog="openCatalog"
+/>
+
   </div>
 </template>
 
 <script>
-export default {};
+  import Modal from "../Modal.vue"
+export default {
+  data(){
+  return {
+    category: false
+  }
+  },
+  components:{
+    Modal
+  },
+  methods:{
+    openCatalog(){
+      this.category = !this.category
+    }
+  }
+};
 </script>
 
 <style>
@@ -123,7 +144,7 @@ export default {};
     var(--tw-gradient-to, rgba(233, 100, 67, 0));
 }
 .header {
-  padding-top: 8px;
+
   background-image: linear-gradient(90deg, var(--tw-gradient-stops));
 }
 
