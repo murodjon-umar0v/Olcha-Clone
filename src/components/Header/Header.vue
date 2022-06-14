@@ -53,10 +53,12 @@
             alt="olcha"
             width="132"
             height="28"
-            class="me-5"
+            class="me-4"
           />
         </router-link>
-        <button class="rounded-pill py-3 px-4 text-white bg-transparent border me-3">
+        <button
+          class="rounded-pill py-3 px-4 text-white bg-transparent border me-2"
+        >
           Каталог
           <svg
             fill="#fff"
@@ -71,12 +73,38 @@
             />
           </svg>
         </button>
-      <div class="d-flex">
-        <input class="input-search"  type="search">
-        <button>
-          <img src="../../assets/search.svg" alt="">
-        </button>
-      </div>
+        <div class="d-flex align-items-center">
+          <input class="input-search" type="search" />
+          <button class="search-button">
+            <img src="../../assets/search.svg" alt="" />
+          </button>
+        </div>
+        <ul class="d-flex align-items-center list">
+          <li class="me-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <svg class="mb-2" aria-hidden="true" width="18" height="24" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 5C11.5 3.62125 10.3787 2.5 9 2.5C7.62125 2.5 6.5 3.62125 6.5 5C6.5 6.37875 7.62125 7.5 9 7.5C10.3787 7.5 11.5 6.37875 11.5 5ZM14 5C14 7.7575 11.7575 10 9 10C6.2425 10 4 7.7575 4 5C4 2.2425 6.2425 0 9 0C11.7575 0 14 2.2425 14 5ZM0.25 20C0.25 15.175 4.17625 11.25 9 11.25C13.8237 11.25 17.75 15.175 17.75 20C17.75 20.69 17.1912 21.25 16.5 21.25C15.8088 21.25 15.25 20.69 15.25 20C15.25 16.5537 12.4462 13.75 9 13.75C5.55375 13.75 2.75 16.5537 2.75 20C2.75 20.69 2.19125 21.25 1.5 21.25C0.80875 21.25 0.25 20.69 0.25 20Z" fill="#fff"></path></svg>
+             <p class="m-0 text-white text-bold">Войти</p>
+            </div>
+          </li>
+           <li class="me-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <svg class="mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3.25" y="15" width="2.5" height="7" rx="1.25" fill="#fff"></rect> <rect x="8.25" y="3" width="2.5" height="19" rx="1.25" fill="#fff"></rect> <rect x="13.25" y="11" width="2.5" height="11" rx="1.25" fill="#fff"></rect> <rect x="18.25" y="7" width="2.5" height="15" rx="1.25" fill="#fff"></rect></svg>
+             <p class="m-0 text-white text-bold">Сравнение</p>
+            </div>
+          </li>
+          <li class="me-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+             <svg class="mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.2913 4.61183C20.7805 4.10083 20.1741 3.69547 19.5066 3.41891C18.8392 3.14235 18.1238 3 17.4013 3C16.6788 3 15.9634 3.14235 15.2959 3.41891C14.6285 3.69547 14.022 4.10083 13.5113 4.61183L12.4513 5.67183L11.3913 4.61183C10.3596 3.58013 8.96032 3.00053 7.50129 3.00053C6.04226 3.00053 4.64298 3.58013 3.61129 4.61183C2.5796 5.64352 2 7.04279 2 8.50183C2 9.96086 2.5796 11.3601 3.61129 12.3918L4.67129 13.4518L12.4513 21.2318L20.2313 13.4518L21.2913 12.3918C21.8023 11.8811 22.2076 11.2746 22.4842 10.6072C22.7608 9.93972 22.9031 9.22431 22.9031 8.50183C22.9031 7.77934 22.7608 7.06393 22.4842 6.39647C22.2076 5.72901 21.8023 5.12258 21.2913 4.61183V4.61183Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+             <p class="m-0 text-white text-bold">Избранное</p>
+            </div>
+          </li>
+           <li>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+             <svg class="mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.09265 6.41183L6.09265 2.41183H18.0927L21.0927 6.41183M3.09265 6.41183V20.4118C3.09265 20.9423 3.30336 21.451 3.67844 21.826C4.05351 22.2011 4.56222 22.4118 5.09265 22.4118H19.0927C19.6231 22.4118 20.1318 22.2011 20.5069 21.826C20.8819 21.451 21.0927 20.9423 21.0927 20.4118V6.41183M3.09265 6.41183H21.0927M16.0927 10.4118C16.0927 11.4727 15.6712 12.4901 14.9211 13.2403C14.1709 13.9904 13.1535 14.4118 12.0927 14.4118C11.0318 14.4118 10.0144 13.9904 9.26422 13.2403C8.51408 12.4901 8.09265 11.4727 8.09265 10.4118" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+             <p class="m-0 text-white text-bold">Корзина</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </b-container>
   </div>
@@ -139,15 +167,32 @@ export default {};
   font-weight: 500;
 }
 
-.input-search{
-width: 522px;
-height: 50px;
-padding: 14px 15px;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
-border: 2px solid white;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    border: 6px solid transparent;
+.input-search {
+  width: 522px;
+  height: 50px;
+  padding: 14px 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid white;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border: 6px solid transparent;
+}
+
+.search-button {
+  width: 74px;
+  height: 50px;
+  background-color: #eb1537;
+  border: 2px solid white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-right: 50px;
+}
+
+.list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
 }
 </style>
