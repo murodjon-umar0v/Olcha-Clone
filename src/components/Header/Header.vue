@@ -30,25 +30,53 @@
           <button class="rounded-pill p-2 button-tog">Рассрочка</button>
         </b-col>
         <b-col cols="8" class="text-end">
-          <router-link class="text-light link-top"> Присоединяйтесь к нам </router-link>
+          <router-link class="text-light link-top">
+            Присоединяйтесь к нам
+          </router-link>
           <router-link class="text-light link-top"> Помощь </router-link>
           <router-link class="text-light link-top"> Карта сайта </router-link>
-          <a class="text-white text-bold" href="tel+998712022021">+998 (71) 202 202 1</a>
+          <a class="text-white text-bold" href="tel+998712022021"
+            >+998 (71) 202 202 1</a
+          >
           <button class="button-call">Запросить звонок</button>
         </b-col>
       </b-row>
     </b-container>
 
-    <hr>
+    <hr />
 
     <b-container>
-      <div class="d-flex">
+      <div class="d-flex align-items-center">
         <router-link>
-          <img src="../../assets/logo.png" alt="olcha" width="132" height="28">
+          <img
+            src="../../assets/logo.png"
+            alt="olcha"
+            width="132"
+            height="28"
+            class="me-5"
+          />
         </router-link>
-        <button>Каталог
-
+        <button class="rounded-pill py-3 px-4 text-white bg-transparent border me-3">
+          Каталог
+          <svg
+            fill="#fff"
+            width="18"
+            height="12"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+            />
+          </svg>
         </button>
+      <div class="d-flex">
+        <input class="input-search"  type="search">
+        <button>
+          <img src="../../assets/search.svg" alt="">
+        </button>
+      </div>
       </div>
     </b-container>
   </div>
@@ -95,19 +123,31 @@ export default {};
   color: white;
 }
 
-.link-top{
+.link-top {
   margin-right: 15px;
   font-size: 18px;
   font-weight: 500;
 }
 
-.button-call{
-margin-left: 10px;
-padding: 8px 5px;
+.button-call {
+  margin-left: 10px;
+  padding: 8px 5px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.input-search{
+width: 522px;
+height: 50px;
+padding: 14px 15px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
 border: 2px solid white;
-background-color: transparent;
-border-radius: 5px;
-color: white;
-font-weight: 500;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border: 6px solid transparent;
 }
 </style>
