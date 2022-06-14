@@ -8,6 +8,7 @@
     <span class="text-danger fw-bold pb-3">Информация {{ i }}</span>
    </div>
   </VueSlickCarousel>
+  <CarouselBanner />
   <router-view />
   <Footer />
  </div>
@@ -17,12 +18,14 @@
 import Header from "./components/Header/Header.vue";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import VueSlickCarousel from "vue-slick-carousel";
+import CarouselBanner from "./components/CarouselBanner.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
  components: {
   Header,
   VueSlickCarousel,
+  CarouselBanner,
   Footer,
  },
  data() {
