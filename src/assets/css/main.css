@@ -5,3 +5,8 @@
     transition: all 0.3s ease-in-out;
     font-family: 'Raleway', sans-serif;
 }
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}

@@ -17,4 +17,9 @@ export default {
   },
 };
 </script>
-<style></style>
+
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900");
+@import url("../assets/css/main.css");
+</style>
