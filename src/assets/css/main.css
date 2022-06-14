@@ -36,7 +36,7 @@ footer ul.about a:hover {
 
 footer div.cards img {
  width: 100%;
- height: 20px;
+ height: 25px;
 }
 
 .carousel,
@@ -49,3 +49,10 @@ footer div.cards img {
     background: none !important;
 }
 
+footer .cards img {
+    object-fit: contain;
+}
+
+footer .cards div.rounded {
+    border-radius: 10px !important;
+}

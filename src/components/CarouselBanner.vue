@@ -44,6 +44,9 @@ export default {
    sliding: null,
   };
  },
+ mounted () {
+  
+ },
  methods: {
   onSlideStart() {
    this.sliding = true;

@@ -138,32 +138,32 @@
     <div class="container">
      <div class="row cards">
       <div class="col-4 p-3">
-       <div class="border rounded bg-light text-center px-4 py-3">
+       <div class="border rounded bg-light text-center px-2 py-4">
         <img src="../assets/apelsin.png" />
        </div>
       </div>
       <div class="col-4 p-3">
-       <div class="border rounded bg-light text-center px-4 py-3">
+       <div class="border rounded bg-light text-center px-2 py-4">
         <img src="../assets/uzcard.png" />
        </div>
       </div>
       <div class="col-4 p-3">
-       <div class="border rounded bg-light text-center px-4 py-3">
+       <div class="border rounded bg-light text-center px-2 py-4">
         <img src="../assets/payme.png" />
        </div>
       </div>
       <div class="col-4 p-3">
-       <div class="border rounded bg-light text-center px-4 py-3">
+       <div class="border rounded bg-light text-center px-2 py-4">
         <img src="../assets/click.png" />
        </div>
       </div>
       <div class="col-4 p-3">
-       <div class="border rounded bg-light text-center px-4 py-3">
+       <div class="border rounded bg-light text-center px-2 py-4">
         <img src="../assets/humo.jpeg" />
        </div>
       </div>
       <div class="col-4 p-3">
-       <div class="border rounded bg-light text-center px-4 py-3">
+       <div class="border rounded bg-light text-center px-2 py-4">
         <img src="../assets/paynet.png" />
        </div>
       </div>
