@@ -2,7 +2,7 @@
  <div class="px-3 mb-5 brands border d-flex justify-between items-center flex-wrap">
   <div class="w-100 border d-flex justify-between items-center">
    <span class="h1 fw-normal"> Бренды </span>
-   <router-link to="/brands" class="text-danger border">
+   <router-link to="/brands" class="text-danger border d-flex items-center">
     Смотреть все
     <svg xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 0 320 512">
      <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
