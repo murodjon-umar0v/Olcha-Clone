@@ -46,14 +46,22 @@
     <hr />
 
     <b-container>
-      <div class="d-flex align-items-center ">
+      <div class="nav">
+      <div class="d-flex align-items-center">
         <router-link>
           <img
             src="../../assets/logo.png"
             alt="olcha"
             width="132"
             height="28"
-            class="me-4"
+            class="me-4 logo-img-white"
+          />
+          <img
+            src="../../assets/index.png"
+            alt="olcha"
+            width="132"
+            height="28"
+            class="me-4 d-none logo-img-red"
           />
         </router-link>
         <button
@@ -106,6 +114,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </div>
     </b-container>
 <Modal
@@ -222,6 +231,8 @@ color: black;
 padding-top: 20px;
 padding-bottom: 20px;
 position: fixed;
+padding-left: 100px;
+padding-right: 50px;
 z-index: 100;
 left: 0;
 top: 0;
@@ -237,6 +248,14 @@ width: 100%;
   fill: red !important;
   width: 18px !important;
   height: 12px !important;
+}
+
+.sitenav--fixed .logo-img-white{
+  display: none;
+}
+
+.sitenav--fixed .logo-img-red {
+  display: block !important;
 }
 
 </style>
