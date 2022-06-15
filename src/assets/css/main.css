@@ -41,18 +41,42 @@ footer div.cards img {
 
 .carousel,
 .carousel * {
-    background-color: none !important;
+ background-color: none !important;
 }
 
 .carousel img {
-    border-radius: 20px !important;
-    background: none !important;
+ border-radius: 20px !important;
+ background: none !important;
 }
 
 footer .cards img {
-    object-fit: contain;
+ object-fit: contain;
 }
 
 footer .cards div.rounded {
-    border-radius: 10px !important;
+ border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet {
+ display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 2px solid #000 !important;
+ outline: 1px solid #000 !important;
+ font-weight: bold;
+ background: #b8b8b8b8
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+ transform: scale(.3);
+ color: crimson;
 }

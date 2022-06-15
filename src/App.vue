@@ -11,7 +11,7 @@
 <script>
 import Header from "./components/Header/Header.vue";
 import Swiper from "./components/Swiper.vue";
-import CarouselBanner from "./components/CarouselBanner.vue";
+import CarouselBanner from "./components/SwiperBanner.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
