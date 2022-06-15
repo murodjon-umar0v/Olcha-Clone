@@ -57,14 +57,19 @@ footer .cards div.rounded {
  border-radius: 10px !important;
 }
 
-.swiper-pagination-bullet {
+.catalog .swiper-pagination-bullet {
  display: none !important;
+}
+
+span.swiper-pagination-bullet-active {
+ background: red !important;
+ transform: scale(1.5);
 }
 
 .swiper-button-prev,
 .swiper-button-next {
- width: 30px;
- height: 30px;
+ width: 32px;
+ height: 32px;
  border-radius: 50%;
  display: flex;
  justify-content: center;
@@ -72,11 +77,11 @@ footer .cards div.rounded {
  border: 2px solid #000 !important;
  outline: 1px solid #000 !important;
  font-weight: bold;
- background: #b8b8b8b8
+ background: #fff;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
- transform: scale(.3);
+ transform: scale(0.2);
  color: crimson;
 }

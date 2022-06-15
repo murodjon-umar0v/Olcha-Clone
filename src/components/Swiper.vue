@@ -1,5 +1,5 @@
 <template>
- <div class="px-4 my-3">
+ <div class="px-3 my-3 catalog">
   <swiper
    :slides-per-view="9"
    :space-between="30"
