@@ -5,11 +5,13 @@
    class="w-100 mx-auto d-block"
     :slides-per-view="1"
     :space-between="30"
-    :loop="false"
+    :loop="true"
     :pagination="true"
     :navigation="true"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
+    :autoplay="true"
+    :interval="1000"
    >
     <swiper-slide v-for="n in src" :key="n" :class="{ test_2: true }">
      <img
@@ -25,14 +27,15 @@
 </template>
 
 <script>
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 
 import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.css";
+// import "swiper/css/autoplay.css"
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default {
  components: {
