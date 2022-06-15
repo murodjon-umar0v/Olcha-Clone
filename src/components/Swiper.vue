@@ -1,7 +1,7 @@
 <template>
- <div class="my-3">
+ <div class="px-3 my-3 catalog">
   <swiper
-   :slides-per-view="8"
+   :slides-per-view="9"
    :space-between="30"
    :loop="false"
    :pagination="true"
@@ -12,7 +12,6 @@
    <swiper-slide
     v-for="n in 25"
     :key="n"
-    class="test"
     :class="{ test_2: true }"
     style="width: 80px; height: 80px"
    >
