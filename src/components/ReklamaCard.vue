@@ -1,5 +1,5 @@
 <template>
-    <div class="row border py-5 my-3 mx-3">
+    <div class="row border my-3 mx-3">
         <div class="col-12 col-lg-4 border">
             <div class="container border">
                 <img class="img-fluid w-100 mx-auto rounded" src="https://olcha.uz/image/380x132/discount/KK/KK/ci/1637741582.jpg" alt="error">
