@@ -16,7 +16,7 @@
     <swiper-slide v-for="n in src" :key="n" :class="{ test_2: true }">
      <img
       :src="n.link"
-      class="img-fluid w-100 mx-auto"
+      class="img-fluid w-100 mx-auto rounded"
       blank="true"
       alt="error"
      />
