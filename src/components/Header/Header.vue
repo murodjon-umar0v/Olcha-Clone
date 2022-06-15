@@ -30,11 +30,11 @@
           <button class="rounded-pill p-2 button-tog">Рассрочка</button>
         </b-col>
         <b-col cols="8" class="text-end">
-          <router-link class="text-light link-top">
+          <router-link class="text-light link-top" to="#">
             Присоединяйтесь к нам
           </router-link>
-          <router-link class="text-light link-top"> Помощь </router-link>
-          <router-link class="text-light link-top"> Карта сайта </router-link>
+          <router-link class="text-light link-top" to="#"> Помощь </router-link>
+          <router-link class="text-light link-top" to="#"> Карта сайта </router-link>
           <a class="text-white text-bold" href="tel+998712022021"
             >+998 (71) 202 202 1</a
           >
@@ -48,7 +48,7 @@
     <b-container>
       <div ref="nav" :class="[scrol ? 'sitenav--fixed' : 'nav']">
         <div class="d-flex align-items-center nav">
-          <router-link>
+          <router-link to="/">
             <img
               src="../../assets/logo.png"
               alt="olcha"
@@ -203,7 +203,7 @@
 
 <script>
 import Modal from "../Modal.vue";
-import "../../assets/css/header.css"
+import "../../assets/css/header.css";
 export default {
   data() {
     return {
@@ -214,7 +214,7 @@ export default {
   components: {
     Modal,
   },
-    mounted(){
+  mounted() {
     this.offsetHeight = this.$refs.nav.offsetHeight;
   },
   created() {
