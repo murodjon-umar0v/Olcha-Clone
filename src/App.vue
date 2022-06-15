@@ -2,7 +2,9 @@
  <div id="app">
   <Header />
   <Swiper />
-  <router-view />
+  <router-view>
+   <slot />
+  </router-view>
   <Footer />
  </div>
 </template>
