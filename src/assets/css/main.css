@@ -14,6 +14,10 @@ footer * {
     transition: all 0.3s linear;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 footer a {
   text-decoration: none;
   color: whitesmoke;

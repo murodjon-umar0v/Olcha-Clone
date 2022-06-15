@@ -2,9 +2,6 @@
  <div id="app">
   <Header />
   <Swiper />
-  <CarouselBanner />
-  <ReklamaCard />
-  <Brands />
   <router-view />
   <Footer />
  </div>
@@ -13,18 +10,12 @@
 <script>
 import Header from "./components/Header/Header.vue";
 import Swiper from "./components/Swiper.vue";
-import CarouselBanner from "./components/SwiperBanner.vue";
-import ReklamaCard from "./components/ReklamaCard.vue";
-import Brands from "./components/Brands.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
  components: {
   Header,
   Swiper,
-  CarouselBanner,
-  ReklamaCard,
-  Brands,
   Footer,
  },
  data() {

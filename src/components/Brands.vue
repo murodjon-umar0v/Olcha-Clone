@@ -1,11 +1,11 @@
 <template>
  <div
-  class="px-3 mb-5 brands border d-flex justify-between items-center flex-wrap"
+  class="px-3 mb-5 brands d-flex justify-between items-center flex-wrap"
  >
-  <div class="w-100 border d-flex justify-content-between items-center">
+  <div class="w-100 d-flex justify-content-between items-center">
    <span class="h1 fw-normal"> Бренды </span>
    <span class="d-flex items-center">
-    <router-link to="/brands" class="text-danger border fw-bold pt-3">
+    <router-link to="/brands" class="text-danger fw-bold pt-3">
      Смотреть все
      <svg xmlns="http://www.w3.org/2000/svg" height="12" fill="#DC3545" viewBox="0 0 320 512">
       <path
