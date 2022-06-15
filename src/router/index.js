@@ -12,9 +12,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/brand',
+    path: '/brands',
     name: 'Brand',
-   component: () => import('../views/Brand.vue')
+    component: () => import('../views/BrandView.vue')
   }
 ]
 
