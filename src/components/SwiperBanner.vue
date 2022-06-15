@@ -2,7 +2,7 @@
  <div class="px-3 carousel">
   <div class="my-3 mx-auto">
    <swiper
-   class="w-100 mx-auto d-block"
+    class="w-100 mx-auto d-block"
     :slides-per-view="1"
     :space-between="30"
     :loop="true"
@@ -49,6 +49,18 @@ export default {
    src: [
     {
      link:
+      "https://olcha.uz/image/1400x360/sliders/ru/6m01A17hMTJJiVuUiAMEKJQmgX1WC1vxzPTDSOTiRItNJKyzo60GM3TtebIf.",
+    },
+    {
+     link:
+      "https://olcha.uz/image/1400x360/sliders/ru/55duvcdTLcZvkrf2LaHmWe3ZIGuVdOGeXb6ouW9mHLYwDwRvzcVHkaBYpuRe.jpeg",
+    },
+    {
+     link:
+      "https://olcha.uz/image/1400x360/sliders/ru/cz2OBtW4vpbKJqEjGIVuis3wBGltGdzzvIc50P5WrQ6iPlAkiEWK3x1lH4sp.",
+    },
+    {
+     link:
       "https://olcha.uz/image/1400x360/sliders/ru/w4Pxrr5gDfshaIXtVxgLpdTDi8nxqeRO5cYQbZdxoYpLXTDtyKbCBebhuJH6.jpeg",
     },
     {
@@ -58,14 +70,6 @@ export default {
     {
      link:
       "https://olcha.uz/image/1400x360/sliders/ru/MHg1LXLtzAYrrbmB1vp7FVzHTiIai74H4k00n03nKE402nzzAe251eyCsCmi.jpeg",
-    },
-    {
-     link:
-      "https://olcha.uz/image/1400x360/sliders/ru/6m01A17hMTJJiVuUiAMEKJQmgX1WC1vxzPTDSOTiRItNJKyzo60GM3TtebIf.",
-    },
-    {
-     link:
-      "https://olcha.uz/image/1400x360/sliders/ru/55duvcdTLcZvkrf2LaHmWe3ZIGuVdOGeXb6ouW9mHLYwDwRvzcVHkaBYpuRe.jpeg",
     },
    ],
   };
