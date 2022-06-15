@@ -83,7 +83,7 @@
           </svg>
         </button>
         <div class="d-flex align-items-center">
-          <input class="input-search" type="search" />
+          <input class="input-search" type="search" placeholder="Поиск товаров..."/>
           <button class="search-button">
             <img src="../../assets/search.svg" alt="" />
           </button>
@@ -242,6 +242,8 @@ width: 100%;
 .sitenav--fixed button{
   border: 2px solid black !important;
   color: black !important;
+  background-color: black;
+
 }
 
 .sitenav--fixed svg{
@@ -257,5 +259,10 @@ width: 100%;
 .sitenav--fixed .logo-img-red {
   display: block !important;
 }
+
+.sitenav--fixed .input-search{
+  border: 2px solid black;
+}
+
 
 </style>
