@@ -1,6 +1,7 @@
 <template>
  <div id="app">
   <Header />
+  <Swiper />
   <CarouselBanner />
   <router-view />
   <Footer />
@@ -9,12 +10,14 @@
 
 <script>
 import Header from "./components/Header/Header.vue";
+import Swiper from "./components/Swiper.vue";
 import CarouselBanner from "./components/CarouselBanner.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
  components: {
   Header,
+  Swiper,
   CarouselBanner,
   Footer,
  },
