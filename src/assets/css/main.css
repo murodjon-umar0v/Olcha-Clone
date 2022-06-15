@@ -85,3 +85,16 @@ span.swiper-pagination-bullet-active {
  transform: scale(0.2);
  color: crimson;
 }
+
+.brands .cards {
+ width: 14%;
+}
+
+.brands .cards .card {
+ border-radius: 20px !important;
+ cursor: pointer;
+}
+
+.brands .cards .card:hover img {
+    transform: scale(1.4);
+}
