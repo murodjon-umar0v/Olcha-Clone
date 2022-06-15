@@ -1,12 +1,17 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  /* transition: all 0.3s ease-in-out; */
-  font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* transition: all 0.3s ease-in-out; */
+    font-family: "Raleway", sans-serif;
 }
 body{
     overflow-x: hidden;
+}
+
+.brands *,
+footer * {
+    transition: all 0.3s linear;
 }
 
 footer a {
@@ -89,6 +94,7 @@ span.swiper-pagination-bullet-active {
   color: crimson;
 }
 
+
 .brands .cards {
   width: 14%;
 }
@@ -99,5 +105,5 @@ span.swiper-pagination-bullet-active {
 }
 
 .brands .cards .card:hover img {
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
