@@ -214,6 +214,29 @@ export default {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
+
+.sitenav--fixed{
+background-color: white;
+color: black;
+padding-top: 20px;
+padding-bottom: 20px;
+position: fixed;
+z-index: 100;
+left: 0;
+top: 0;
+width: 100%;
+}
+
+.sitenav--fixed button{
+  border: 2px solid black !important;
+  color: black !important;
+}
+
+.sitenav--fixed svg{
+  fill: red !important;
+  width: 18px !important;
+  height: 12px !important;
+}
+
 </style>
