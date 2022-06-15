@@ -46,8 +46,8 @@
     <hr />
 
     <b-container>
-      <div class="nav">
-      <div class="d-flex align-items-center">
+      <div>
+      <div class="d-flex align-items-center nav">
         <router-link>
           <img
             src="../../assets/logo.png"
@@ -91,13 +91,13 @@
         <ul class="d-flex align-items-center list">
           <li class="me-4">
             <div class="d-flex flex-column justify-content-center align-items-center">
-              <svg class="mb-2" aria-hidden="true" width="18" height="24" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 5C11.5 3.62125 10.3787 2.5 9 2.5C7.62125 2.5 6.5 3.62125 6.5 5C6.5 6.37875 7.62125 7.5 9 7.5C10.3787 7.5 11.5 6.37875 11.5 5ZM14 5C14 7.7575 11.7575 10 9 10C6.2425 10 4 7.7575 4 5C4 2.2425 6.2425 0 9 0C11.7575 0 14 2.2425 14 5ZM0.25 20C0.25 15.175 4.17625 11.25 9 11.25C13.8237 11.25 17.75 15.175 17.75 20C17.75 20.69 17.1912 21.25 16.5 21.25C15.8088 21.25 15.25 20.69 15.25 20C15.25 16.5537 12.4462 13.75 9 13.75C5.55375 13.75 2.75 16.5537 2.75 20C2.75 20.69 2.19125 21.25 1.5 21.25C0.80875 21.25 0.25 20.69 0.25 20Z" fill="#fff"></path></svg>
+              <svg class="mb-2" fill="#fff" aria-hidden="true" width="32" height="24" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 5C11.5 3.62125 10.3787 2.5 9 2.5C7.62125 2.5 6.5 3.62125 6.5 5C6.5 6.37875 7.62125 7.5 9 7.5C10.3787 7.5 11.5 6.37875 11.5 5ZM14 5C14 7.7575 11.7575 10 9 10C6.2425 10 4 7.7575 4 5C4 2.2425 6.2425 0 9 0C11.7575 0 14 2.2425 14 5ZM0.25 20C0.25 15.175 4.17625 11.25 9 11.25C13.8237 11.25 17.75 15.175 17.75 20C17.75 20.69 17.1912 21.25 16.5 21.25C15.8088 21.25 15.25 20.69 15.25 20C15.25 16.5537 12.4462 13.75 9 13.75C5.55375 13.75 2.75 16.5537 2.75 20C2.75 20.69 2.19125 21.25 1.5 21.25C0.80875 21.25 0.25 20.69 0.25 20Z" ></path></svg>
              <p class="m-0 text-white text-bold">Войти</p>
             </div>
           </li>
            <li class="me-4">
             <div class="d-flex flex-column justify-content-center align-items-center">
-              <svg class="mb-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3.25" y="15" width="2.5" height="7" rx="1.25" fill="#fff"></rect> <rect x="8.25" y="3" width="2.5" height="19" rx="1.25" fill="#fff"></rect> <rect x="13.25" y="11" width="2.5" height="11" rx="1.25" fill="#fff"></rect> <rect x="18.25" y="7" width="2.5" height="15" rx="1.25" fill="#fff"></rect></svg>
+              <svg class="mb-2" fill="#fff" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3.25" y="15" width="2.5" height="7" rx="1.25"></rect> <rect x="8.25" y="3" width="2.5" height="19" rx="1.25" ></rect> <rect x="13.25" y="11" width="2.5" height="11" rx="1.25"></rect> <rect x="18.25" y="7" width="2.5" height="15" rx="1.25"></rect></svg>
              <p class="m-0 text-white text-bold">Сравнение</p>
             </div>
           </li>
@@ -136,9 +136,28 @@ export default {
   components:{
     Modal
   },
+   created(){
+    document.addEventListener('scroll',this.scroll)
+  },
   methods:{
     openCatalog(){
       this.category = !this.category
+    },
+    scroll(){
+      console.log('win',window.scrollY)
+      console.log(document.body.style.paddingTop)
+      if(window.scrollY >= 300){
+        // document.body.style.paddingTop = this.offsetHeight + "px";
+        this.$refs.nav.classList.add('sitenav--fixed')
+        // setTimeout(()=>{
+        //   this.$refs.nav.classList.add('anime')
+        // },0)
+      }else{
+        document.body.style.paddingTop = 0;
+        this.$refs.nav.classList.remove('sitenav--fixed')
+        // this.$refs.nav.classList.remove('anime')
+      }
+
     }
   }
 };
@@ -262,6 +281,16 @@ width: 100%;
 
 .sitenav--fixed .input-search{
   border: 2px solid black;
+}
+
+.sitenav--fixed p {
+  color: black !important;
+  font-weight: 600;
+}
+
+.sitenav--fixed .list svg{
+  width: 24px;
+  fill: black !important;
 }
 
 
