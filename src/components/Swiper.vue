@@ -1,5 +1,6 @@
 <template>
  <div class="px-3 my-3 catalog text-center container">
+    
   <swiper
    :slides-per-view="9"
    :space-between="50"
