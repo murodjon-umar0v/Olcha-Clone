@@ -225,8 +225,6 @@ export default {
       this.category = !this.category;
     },
     scroll() {
-      console.log("win", window.scrollY);
-      console.log(this.$refs.nav.offsetHeight);
       if (window.scrollY >= 100) {
         document.body.style.paddingTop = this.offsetHeight + "px";
         this.scrol = true;

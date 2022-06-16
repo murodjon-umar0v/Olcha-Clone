@@ -68,7 +68,6 @@ export default {
     if (request.status === 200) {
      const data = JSON.parse(request.response);
      this.brands = data.data.manufacturers;
-     console.log(this.brands);
     }
    };
   },

@@ -1,25 +1,20 @@
 <template>
- <div class="px-3 my-3 catalog">
+ <div class="px-3 my-3 catalog text-center container">
   <swiper
    :slides-per-view="9"
-   :space-between="30"
+   :space-between="50"
    :loop="false"
    :pagination="true"
    :navigation="true"
-   @swiper="onSwiper"
-   @slideChange="onSlideChange"
   >
    <swiper-slide
-    v-for="n in 25"
+    v-for="n in category"
     :key="n"
-    :class="{ test_2: true }"
-    style="width: 80px; height: 80px"
    >
-    <img
-     :src="getImageUrl(34 + n)"
-     class="img-fluid w-100 mx-auto"
-     blank="true"
-    />
+    <img :src="n.main_image" class="img-fluid d-block mx-auto" blank="true" style="width: 60px; height: 50px" />
+    <span>
+     {{ n.name_ru }}
+    </span>
    </swiper-slide>
   </swiper>
  </div>
@@ -40,15 +35,25 @@ export default {
   Swiper,
   SwiperSlide,
  },
+ data() {
+  return {
+   category: [],
+  };
+ },
+ mounted() {
+  this.getCategory();
+ },
  methods: {
+  getCategory() {
+   fetch("https://mobile.olcha.uz/api/v2/categories")
+    .then((response) => response.json())
+    .then((data) => {
+     this.category = data.data.categories;
+     console.log(data.data.categories);
+    });
+  },
   getImageUrl(imageId) {
    return `https://picsum.photos/600/400/?image=${imageId}`;
-  },
-  onSwiper(swiper) {
-   console.log(swiper);
-  },
-  onSlideChange() {
-   console.log("slide change");
   },
  },
 };

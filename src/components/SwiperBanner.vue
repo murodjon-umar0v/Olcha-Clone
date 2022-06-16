@@ -8,8 +8,6 @@
     :loop="true"
     :pagination="true"
     :navigation="true"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
     :autoplay="true"
     :interval="1000"
    >
@@ -77,23 +75,6 @@ export default {
  methods: {
   getImageUrl(imageId) {
    return `https://picsum.photos/600/400/?image=${imageId}`;
-  },
-  onSwiper(swiper) {
-   console.log(swiper);
-  },
-  onSlideChange() {
-   console.log("slide change");
-  },
-
-  onSlideStart(slide) {
-   this.sliding = true;
-
-   console.log("onSlideStart", slide);
-  },
-  onSlideEnd(slide) {
-   this.sliding = false;
-
-   console.log("onSlideEnd", slide);
   },
  },
 };
