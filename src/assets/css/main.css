@@ -167,3 +167,13 @@ ul.pagination li:first-child {
 ul.pagination li:last-child {
     display: none !important;
 }
+
+.max-width {
+    max-width: 98%;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.container {
+    transform: scale(1.05) !important;
+}
