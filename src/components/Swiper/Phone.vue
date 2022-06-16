@@ -1,5 +1,5 @@
 <template>
- <div class="container my-3 mb-5 catalog">
+ <section class="container my-3 mb-5 catalog">
   <span class="h1 fw-normal pb-0 pt-5 px-0"> Популярные товары </span>
   <swiper
    :slides-per-view="5"
@@ -12,7 +12,7 @@
     <Card />
    </swiper-slide>
   </swiper>
- </div>
+ </section>
 </template>
 
 <script>

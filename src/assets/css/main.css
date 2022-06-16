@@ -176,4 +176,5 @@ ul.pagination li:last-child {
 
 section.container {
     transform: scale(1.1) !important;
+    border: 1px solid red;
 }
