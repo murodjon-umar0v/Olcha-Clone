@@ -1,6 +1,5 @@
 <template>
- <section class="px-3 my-3 catalog text-center container">
-
+ <div class="px-3 my-4 catalog text-center container">
   <swiper
    :slides-per-view="9"
    :space-between="50"
@@ -13,12 +12,12 @@
     :key="n"
    >
     <img :src="n.main_image" class="img-fluid d-block mx-auto" blank="true" style="width: 60px; height: 50px" />
-    <span>
+    <span class="d-flex justify-content-center">
      {{ n.name_ru }}
     </span>
    </swiper-slide>
   </swiper>
- </section>
+ </div>
 </template>
 
 <script>
