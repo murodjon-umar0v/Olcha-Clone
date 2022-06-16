@@ -2,9 +2,6 @@
  <div class="home">
   <SwiperBanner />
   <ReklamaCard />
-  <b-container>
-   <Card />
-  </b-container>
   <PhoneSwiper />
   <Brands />
  </div>
@@ -14,7 +11,6 @@
 import SwiperBanner from "@/components/SwiperBanner.vue";
 import ReklamaCard from "@/components/ReklamaCard.vue";
 import Brands from "@/components/Brands.vue";
-import Card from "@/components/Card.vue";
 import PhoneSwiper from "@/components/Swiper/Phone.vue";
 // @ is an alias to /src
 export default {
@@ -23,7 +19,6 @@ export default {
   SwiperBanner,
   ReklamaCard,
   Brands,
-  Card,
   PhoneSwiper,
  },
 };
