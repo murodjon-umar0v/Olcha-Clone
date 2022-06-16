@@ -1,6 +1,6 @@
 <template>
- <div class="px-3 my-3 catalog text-center container">
-    
+ <section class="px-3 my-3 catalog text-center container">
+
   <swiper
    :slides-per-view="9"
    :space-between="50"
@@ -18,7 +18,7 @@
     </span>
    </swiper-slide>
   </swiper>
- </div>
+ </section>
 </template>
 
 <script>
