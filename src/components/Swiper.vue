@@ -1,10 +1,9 @@
 <template>
- <div class="px-3 my-4 catalog text-center container border border-3 border-danger">
+ <div class="px-3 my-4 catalog text-center container">
   <swiper
    :loop="false"
    :pagination="true"
    :navigation="true"
-   :breakpoints="breakpoints"
   >
    <swiper-slide v-for="n in category" :key="n">
     <img
