@@ -1,17 +1,18 @@
 <template>
- <div class="px-3 my-4 catalog text-center container">
+ <div class="px-3 my-4 catalog text-center container border border-3 border-danger">
   <swiper
-   :slides-per-view="9"
-   :space-between="50"
    :loop="false"
    :pagination="true"
    :navigation="true"
+   :breakpoints="breakpoints"
   >
-   <swiper-slide
-    v-for="n in category"
-    :key="n"
-   >
-    <img :src="n.main_image" class="img-fluid d-block mx-auto" blank="true" style="width: 60px; height: 50px" />
+   <swiper-slide v-for="n in category" :key="n">
+    <img
+     :src="n.main_image"
+     class="img-fluid d-block mx-auto"
+     blank="true"
+     style="width: 60px; height: 50px"
+    />
     <span class="d-flex justify-content-center">
      {{ n.name_ru }}
     </span>
@@ -38,11 +39,34 @@ export default {
  data() {
   return {
    category: [],
+   breakpoints: {
+    300: {
+     slidesPerView: 3,
+     spaceBetweenSlides: 30,
+    },
+    500: {
+     slidesPerView: 4,
+     spaceBetweenSlides: 30,
+    },
+    800: {
+     slidesPerView: 6,
+     spaceBetweenSlides: 30,
+    },
+    999: {
+     slidesPerView: 7,
+     spaceBetweenSlides: 30,
+    },
+    1100: {
+     slidesPerView: 9,
+     spaceBetweenSlides: 30,
+    },
+   },
   };
  },
  mounted() {
   this.getCategory();
  },
+
  methods: {
   getCategory() {
    fetch("https://mobile.olcha.uz/api/v2/categories")

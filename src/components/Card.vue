@@ -58,7 +58,5 @@
 
 <script>
 import "../assets/css/card.css";
-export default {
- data() {},
-};
+export default {};
 </script>
