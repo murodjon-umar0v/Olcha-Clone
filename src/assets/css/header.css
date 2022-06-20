@@ -76,7 +76,9 @@
   margin: 0;
   padding: 0;
 }
-
+.nav{
+  display: block !important;
+}
 .sitenav--fixed {
   background-color: white;
   color: black;
@@ -85,7 +87,7 @@
   position: fixed;
   padding-left: 110px;
   padding-right: 50px;
-  z-index: 100;
+  z-index: 200;
   left: 0;
   top: 0;
   width: 100%;
