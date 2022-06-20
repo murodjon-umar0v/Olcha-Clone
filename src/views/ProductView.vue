@@ -1,5 +1,5 @@
 <template>
- <div class="px-3 products" @scroll="onScroll(e)">
+ <div class="px-3 products">
   <h2 class="title">Популярные товары - Страница - {{ page }}</h2>
   <div class="row py-5">
    <div class="col-2">
@@ -21,7 +21,6 @@
          <div class="col-10">Смартфоны, телефоны, гаджеты, аксессуары</div>
          <div class="col-2">
           <svg
-           :class="{ 'rotate-180': accordion1 }"
            class="bi bi-chevron-down align-middle h-100"
            width="1em"
            height="1em"
@@ -40,7 +39,7 @@
       </b-card-header>
       <b-collapse
        id="accordion-1"
-       visible="true"
+       visible
        accordion="my-accordion"
        role="tabpanel"
       >
@@ -72,7 +71,6 @@
          <div class="col-10">Ноутбуки, принтеры, компьютеры</div>
          <div class="col-2">
           <svg
-           :class="{ 'rotate-180': accordion1 }"
            class="bi bi-chevron-down align-middle h-100"
            width="1em"
            height="1em"
@@ -91,7 +89,7 @@
       </b-card-header>
       <b-collapse
        id="accordion-2"
-       visible="true"
+       visible
        accordion="my-accordion"
        role="tabpanel"
       >
@@ -122,7 +120,6 @@
          <div class="col-10">Телевизоры, фото-видео и аудио</div>
          <div class="col-2">
           <svg
-           :class="{ 'rotate-180': accordion1 }"
            class="bi bi-chevron-down align-middle h-100"
            width="1em"
            height="1em"
@@ -141,7 +138,7 @@
       </b-card-header>
       <b-collapse
        id="accordion-3"
-       visible="true"
+       visible
        accordion="my-accordion"
        role="tabpanel"
       >
@@ -158,7 +155,7 @@
    </div>
 
    <div class="col-10">
-    <div class="d-flex flex-wrap justify-content-between align-items-center">
+    <div class="d-flex flex-wrap justify-content-between align-items-center" id="product-view">
      <Card v-for="i in showCount" :key="i" />
     </div>
    </div>
@@ -230,13 +227,21 @@ export default {
    ],
   };
  },
-
+ created() {
+  document.addEventListener("scroll", this.scroll);
+ },
  methods: {
-  onScroll(e) {
-   if (e.target.scrollTop + e.target.clientHeight >= e.target.scrollHeight) {
-    this.page++;
-    this.showCount += 12;
-   }
+  scroll() {
+    document.getElementsById("product-view").scrollIntoView({
+     behavior: "smooth",
+     block: "start",
+    });
+
+//    if (
+    
+//    ) {
+//     this.showCount += 12;
+//    }
   },
  },
 };

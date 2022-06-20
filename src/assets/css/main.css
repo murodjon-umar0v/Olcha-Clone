@@ -192,9 +192,10 @@ button:focus {
 
 #fixed {
  position: fixed;
- right: 10px;
- bottom: 10px;
+ right: 15px;
+ bottom: 15px;
  width: 70px;
  height: 70px;
  z-index: 99999;
+ cursor: pointer;
 }
