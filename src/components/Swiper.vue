@@ -67,7 +67,7 @@ export default {
       },
     };
   },
-  created() {
+  beforeMount() {
     this.getCategory();
   },
 

@@ -11,7 +11,7 @@
     :autoplay="true"
     :interval="1000"
    >
-    <swiper-slide v-for="n in src" :key="n" :class="{ test_2: true }">
+    <swiper-slide v-for="n in src" :key="n">
      <img
       :src="n.link"
       class="img-fluid w-100 mx-auto rounded"
@@ -31,7 +31,6 @@ import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.css";
-// import "swiper/css/autoplay.css"
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
