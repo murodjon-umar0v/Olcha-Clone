@@ -11,6 +11,7 @@
               height="24"
             />
             Рус
+
           </button>
           <b-button variant="danger" class="rounded-pill p-2">
             <svg
@@ -47,24 +48,29 @@
 
     <b-container>
       <div ref="nav" :class="[scrol ? 'sitenav--fixed' : 'nav']">
-        <div class="d-flex align-items-center nav">
-          <router-link to="/">
-            <img
+  <b-navbar toggleable="lg">
+    <b-navbar-brand href="#">
+      <img
               src="../../assets/logo.png"
               alt="olcha"
               width="132"
               height="28"
-              class="me-4 logo-img-white"
+              class="me-2 logo-img-white"
             />
-            <img
+             <img
               src="../../assets/index.png"
               alt="olcha"
               width="132"
               height="28"
               class="me-4 d-none logo-img-red"
             />
-          </router-link>
-          <button
+    </b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+
+<button
             @click="openCatalog"
             class="rounded-pill py-2 px-4 text-white bg-transparent border me-2"
           >
@@ -82,7 +88,11 @@
               />
             </svg>
           </button>
-          <div class="d-flex align-items-center">
+
+
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+       <div class="d-flex align-items-center">
             <input
               class="input-search"
               type="search"
@@ -92,7 +102,8 @@
               <img src="../../assets/search.svg" alt="" />
             </button>
           </div>
-          <ul class="d-flex align-items-center list">
+
+<ul class="d-flex align-items-center list">
             <li class="me-4">
               <div
                 class="d-flex flex-column justify-content-center align-items-center"
@@ -194,8 +205,12 @@
               </div>
             </li>
           </ul>
-        </div>
-      </div>
+
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+</div>
+
     </b-container>
     <Modal :category="category" @openCatalog="openCatalog" />
   </div>
