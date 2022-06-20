@@ -10,6 +10,8 @@
     :navigation="true"
     :autoplay="true"
     :interval="1000"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
    >
     <swiper-slide v-for="n in src" :key="n">
      <img
@@ -74,6 +76,12 @@ export default {
  methods: {
   getImageUrl(imageId) {
    return `https://picsum.photos/600/400/?image=${imageId}`;
+  },
+  onSwiper(swiper) {
+   this.sliding = swiper;
+  },
+  onSlideChange() {
+   this.slide = this.sliding.activeIndex;
   },
  },
 };

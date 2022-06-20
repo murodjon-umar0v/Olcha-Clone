@@ -1,6 +1,7 @@
 <template>
  <div id="app">
   <Header />
+  <Fixed />
   <Swiper />
   <router-view>
    <slot />
@@ -13,12 +14,14 @@
 import Header from "./components/Header/Header.vue";
 import Swiper from "./components/Swiper.vue";
 import Footer from "./components/Footer.vue";
+import Fixed from "./components/Fixed.vue";
 
 export default {
  components: {
   Header,
   Swiper,
   Footer,
+  Fixed,
  },
  data() {
   return {

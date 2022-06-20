@@ -136,44 +136,65 @@ span.swiper-pagination-bullet-active {
 }
 
 .page-item.active button {
-    background: crimson !important;
-    border: 1px solid crimson !important;
-    color: #fff;
+ background: crimson !important;
+ border: 1px solid crimson !important;
+ color: #fff;
 }
 
 ul.pagination {
-    border-radius: 40px;
-    background: #E5E7EB;
+ border-radius: 40px;
+ background: #e5e7eb;
 }
 
 ul.pagination button {
-    background: #E5E7EB;
-    color: #000;
-    border: 0;
+ background: #e5e7eb;
+ color: #000;
+ border: 0;
 }
 
 li[role="menuitem"] {
-    display: none !important;
+ display: none !important;
 }
 li[aria-label="Go to previous page"],
 li[aria-label="Go to next page"] {
-    display: none !important;
+ display: none !important;
 }
 
 ul.pagination li:first-child {
-    display: none !important;
+ display: none !important;
 }
 
 ul.pagination li:last-child {
-    display: none !important;
+ display: none !important;
 }
 
 .max-width {
-    max-width: 98%;
-    margin: auto;
-    border: 1px solid red;
+ max-width: 98%;
+ margin: auto;
+ border: 1px solid red;
 }
 
 section.container {
-    transform: scale(1.1) !important;
+ transform: scale(1.1) !important;
+}
+
+svg.rotate-180 {
+ transform: rotate(180deg);
+}
+
+button {
+ outline: none !important;
+}
+
+button:focus {
+ outline: none !important;
+}
+
+#fixed {
+ position: fixed;
+ right: 10px;
+ bottom: 10px;
+ width: 70px;
+ height: 70px;
+ z-index: 99999;
 }
