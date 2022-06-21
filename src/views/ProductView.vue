@@ -155,7 +155,10 @@
    </div>
 
    <div class="col-10">
-    <div class="d-flex flex-wrap justify-content-between align-items-center" id="product-view">
+    <div
+     class="d-flex flex-wrap justify-content-between align-items-center"
+     id="product-view"
+    >
      <Card v-for="i in showCount" :key="i" />
     </div>
    </div>
@@ -226,23 +229,6 @@ export default {
     },
    ],
   };
- },
- created() {
-  document.addEventListener("scroll", this.scroll);
- },
- methods: {
-  scroll() {
-    document.getElementsById("product-view").scrollIntoView({
-     behavior: "smooth",
-     block: "start",
-    });
-
-//    if (
-    
-//    ) {
-//     this.showCount += 12;
-//    }
-  },
  },
 };
 </script>

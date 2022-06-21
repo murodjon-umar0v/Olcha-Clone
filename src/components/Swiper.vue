@@ -35,7 +35,6 @@ export default {
     return {
       category: [],
       swiperLotOptions2: {
-        slidesPerView: 4,
         loop: false,
         pagination: true,
         navigation: true,
