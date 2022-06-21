@@ -1,48 +1,38 @@
 <template>
-<div>
+  <div>
     <div :class="category ? 'openCatalog menu' : 'defaultCatalog menu'">
       <div class="body__menu">
         <b-container>
           <b-row>
             <b-card class="w-100 border-0" no-body>
-              <b-tabs
-                pills
-                card
-                vertical
-              >
+              <b-tabs pills card vertical>
                 <b-tab
-                  v-for="(item,indexMenu) in GET_MEGA_MENU"
-                  :key="indexMenu"
-                  :title="item.title[$i18n.locale]"
+                  v-for="item in menu"
+                  :key="item.id"
+                  :title="item.title"
                 >
                   <div class="ml-3 animate">
-                    <h5
-                      v-if="item.title"
-                      class="menu__h5"
-                    >
-                      {{ item.title[$i18n.locale] }}
+                    <h5 v-if="item.title" class="menu__h5">
+                      {{ item.title }}
                     </h5>
 
                     <div class="row overflow-auto">
                       <ul
-                        v-for="(sub,indexSub) in item.children"
+                        v-for="(sub, indexSub) in item.children"
                         :key="indexSub"
                         class="ul__menu col-md-2"
                       >
-                        <h6
-                          v-if="sub.title"
-                          class="menu__ul__h6"
-                        >
-                          {{ sub.title[$i18n.locale] }}
+                        <h6 v-if="sub.title" class="menu__ul__h6">
+                          {{ sub.title }}
                         </h6>
 
                         <li
-                          v-for="(br,indexBrands) in sub.brand_name"
+                          v-for="(br, indexBrands) in sub.brand_name"
                           :key="indexBrands"
                           class="mb-2"
                           @click="closeMenu"
                         >
-
+                          {{ br.title }}
                         </li>
                       </ul>
                     </div>
@@ -64,24 +54,58 @@
 
 <script>
 export default {
-props: {
-  category: {
-    type: Boolean,
-    default: false
-  }
-},
-methods: {
-  closeMenu(){
-    this.$emit("openCatalog")
-  }
-}
-}
+  data() {
+    return {
+      menu: [
+        {
+          id: 0,
+          title: "Смартфон, телефон, гаджет, аксессуарлар",
+          children: [
+            {
+              title: "Смартфонлар",
+              brand_name: [
+                {
+                  title: "Alcatel",
+                },
+              ],
+            },
+          ],
+        },
+         {
+          id: 1,
+          title: "Ноутбук, принтер, компьютерлар",
+          children: [
+            {
+              title: "Ноутбуклар",
+              brand_name: [
+                {
+                  title: "Lenova",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    };
+  },
+  props: {
+    category: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  methods: {
+    closeMenu() {
+      this.$emit("openCatalog");
+    },
+  },
+};
 </script>
 
 <style>
 .openCatalog {
   top: 0;
-  transform: translateX(0%)
+  transform: translateX(0%);
 }
 
 .defaultCatalog {
@@ -95,14 +119,14 @@ methods: {
   height: 100%;
   width: auto;
   z-index: 991;
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 .black__shadow {
   visibility: visible;
   opacity: 1;
-  transition: all .5s;
-  background-color: rgba(0, 0, 0, .5);
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   position: fixed;
   top: 0;
@@ -112,7 +136,7 @@ methods: {
 }
 
 .menu__items {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   height: 100vh;
 }
 
@@ -121,9 +145,11 @@ methods: {
   height: 100vh !important;
 }
 
-.body__menu .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background: var(--yellow-color);
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.14), 0 1px 10px rgba(0, 0, 0, 0.12);
+.body__menu .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #EB1537;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.14),
+    0 1px 10px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -136,7 +162,7 @@ methods: {
 }
 
 .body__menu .nav-pills li {
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .body__menu .nav-pills li:hover {
@@ -164,7 +190,7 @@ methods: {
   font-size: 14px;
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.6);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .ul__menu li a:hover {
