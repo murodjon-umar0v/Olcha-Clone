@@ -15,8 +15,8 @@
     </router-link>
    </span>
   </div>
-  <div class="cards p-2" v-for="(i, idx) in brands" :key="idx">
-   <div v-if="idx < 20" class="card d-flex flex-column items-center justify-content-around py-3">
+  <div class="cards p-2 d-flex align-content-stretch flex-column items-center justify-content-around" v-for="(i, idx) in brands" :key="idx">
+   <div v-if="idx < 20" class="card d-flex align-content-stretch flex-column items-center justify-content-around py-3">
     <img class="w-50 mx-auto d-block" :src="i.main_image" />
     <span class="text-center pt-2">
      <a :href="i.link" target="_blank">

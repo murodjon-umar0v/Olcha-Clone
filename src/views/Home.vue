@@ -3,6 +3,8 @@
   <SwiperBanner />
   <ReklamaCard />
   <PhoneSwiper />
+  <OthersSwiper />
+  <Credits />
   <Brands />
  </div>
 </template>
@@ -12,6 +14,8 @@ import SwiperBanner from "@/components/SwiperBanner.vue";
 import ReklamaCard from "@/components/ReklamaCard.vue";
 import Brands from "@/components/Brands.vue";
 import PhoneSwiper from "@/components/Swiper/Phone.vue";
+import OthersSwiper from "@/components/Swiper/Others.vue";
+import Credits from "@/components/Swiper/Credits.vue";
 // @ is an alias to /src
 export default {
  name: "Home",
@@ -20,6 +24,8 @@ export default {
   ReklamaCard,
   Brands,
   PhoneSwiper,
+  OthersSwiper,
+  Credits,
  },
 };
 </script>

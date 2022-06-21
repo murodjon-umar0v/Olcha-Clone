@@ -1,7 +1,7 @@
 <template>
  <section class="container my-3 mb-5 catalog">
   <div class="w-100 px-3 d-flex justify-content-between items-center">
-   <span class="h2 fw-normal"> Популярные товары </span>
+   <span class="h2 fw-normal"> Выгодная рассрочка </span>
    <span class="d-flex items-center">
     <router-link to="/products" class="text-danger fw-bold pt-3">
      Смотреть все
@@ -25,7 +25,7 @@
    :pagination="true"
    :navigation="true"
   >
-   <swiper-slide v-for="n in 25" :key="n">
+   <swiper-slide v-for="n in 3" :key="n">
     <Card />
    </swiper-slide>
   </swiper>
