@@ -10,7 +10,7 @@
                 card
                 vertical
               >
-                <!-- <b-tab
+                <b-tab
                   v-for="(item,indexMenu) in GET_MEGA_MENU"
                   :key="indexMenu"
                   :title="item.title[$i18n.locale]"
@@ -47,7 +47,7 @@
                       </ul>
                     </div>
                   </div>
-                </b-tab> -->
+                </b-tab>
               </b-tabs>
             </b-card>
           </b-row>
