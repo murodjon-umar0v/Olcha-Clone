@@ -18,36 +18,36 @@
     </router-link>
    </span>
   </div>
-  <swiper
+  <!-- <swiper
    :slides-per-view="5"
    :space-between="0"
    :loop="false"
    :pagination="true"
    :navigation="true"
   >
-   <swiper-slide v-for="n in 3" :key="n">
+   <swiper-slide v-for="n in 3" :key="n"> -->
     <Card />
-   </swiper-slide>
-  </swiper>
+   <!-- </swiper-slide>
+  </swiper> -->
  </section>
 </template>
 
-<script>
-import { Navigation, Pagination } from "swiper";
+// <script>
+// import { Navigation, Pagination } from "swiper";
 import Card from "@/components/Card.vue";
 
-import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
+// import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
 
-// Import Swiper styles
-import "swiper/swiper-bundle.css";
-// import "../../assets/css/card.css";
+// // Import Swiper styles
+// import "swiper/swiper-bundle.css";
+// // import "../../assets/css/card.css";
 
-SwiperCore.use([Navigation, Pagination]);
+// SwiperCore.use([Navigation, Pagination]);
 
 export default {
  components: {
-  Swiper,
-  SwiperSlide,
+//   Swiper,
+//   SwiperSlide,
   Card,
  },
 };

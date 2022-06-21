@@ -1,7 +1,7 @@
 <template>
  <div class="px-3 carousel">
   <div class="my-3 mx-auto">
-   <swiper
+   <!-- <swiper
     class="w-100 mx-auto d-block"
     :slides-per-view="1"
     :space-between="30"
@@ -21,25 +21,25 @@
       alt="error"
      />
     </swiper-slide>
-   </swiper>
+   </swiper> -->
   </div>
  </div>
 </template>
 
 <script>
-import { Navigation, Pagination, Autoplay } from "swiper";
+// import { Navigation, Pagination, Autoplay } from "swiper";
 
-import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
+// import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
 
 // Import Swiper styles
-import "swiper/swiper-bundle.css";
+// import "swiper/swiper-bundle.css";
 
-SwiperCore.use([Navigation, Pagination, Autoplay]);
+// SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default {
  components: {
-  Swiper,
-  SwiperSlide,
+  // Swiper,
+  // SwiperSlide,
  },
  data() {
   return {

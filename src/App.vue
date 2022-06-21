@@ -3,6 +3,7 @@
   <Header />
   <Fixed />
   <Swiper />
+  <SwiperTest />
   <router-view>
    <slot />
   </router-view>
@@ -15,6 +16,7 @@ import Header from "./components/Header/Header.vue";
 import Swiper from "./components/Swiper.vue";
 import Footer from "./components/Footer.vue";
 import Fixed from "./components/Fixed.vue";
+import SwiperTest from "./components/Swiper/index.vue";
 
 export default {
  components: {
@@ -22,6 +24,7 @@ export default {
   Swiper,
   Footer,
   Fixed,
+  SwiperTest
  },
  data() {
   return {

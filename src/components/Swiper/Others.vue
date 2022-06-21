@@ -18,7 +18,7 @@
     </router-link>
    </span>
   </div>
-  <swiper
+  <!-- <swiper
    :slides-per-view="5"
    :space-between="0"
    :loop="false"
@@ -95,24 +95,15 @@
      </div>
     </div>
    </swiper-slide>
-  </swiper>
+  </swiper> -->
  </section>
 </template>
 
 <script>
-import { Navigation, Pagination } from "swiper";
-import { SwiperCore, Swiper, SwiperSlide } from "swiper-vue2";
 
-// Import Swiper styles
-import "swiper/swiper-bundle.css";
-// import "../../assets/css/card.css";
-
-SwiperCore.use([Navigation, Pagination]);
 
 export default {
  components: {
-  Swiper,
-  SwiperSlide,
  },
  data() {
   return {
